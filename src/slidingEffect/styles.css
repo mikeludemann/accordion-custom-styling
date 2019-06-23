@@ -1,0 +1,145 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+
+.menu--accordion {
+	padding: 0;
+	list-style: none;
+	width: 400px;
+	margin: 20px auto;
+	font-family: 'Century Gothic';
+	box-shadow: 0px 0px 25px #00000070;
+	clear: both;
+	display: table;
+	margin-bottom: 100px;
+}
+
+.menu--accordion .menu--accordion--list {
+	font-size: 14px;
+	border-bottom: 1px solid #58ef4a;
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	height: 50px;
+	vertical-align: sub;
+	background: #58ef4a;
+	clear: both;
+}
+
+.menu--accordion .menu--accordion--list:after {
+	content: "\f107";
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	right: 17px;
+	top: 17px;
+	padding: 0px 5px;
+	color: #fff;
+}
+
+.menu--accordion .menu--accordion--list:before {
+	content: '\f07b';
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	left: 17px;
+	top: 17px;
+	padding: 0px 5px;
+	color: #fff;
+}
+
+.menu--accordion .menu--accordion--list a {
+	text-decoration: none;
+	color: #fff;
+	padding: 17px 0px 17px 45px;
+	display: block;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.menu--accordion .menu--accordion--list a:hover {
+	background-color: #58af4a;
+	transition: 300ms all;
+	color: #fff;
+}
+
+.menu--accordion .menu--accordion--list .items {
+	height: 0px;
+	overflow: hidden;
+}
+
+.menu--accordion .menu--accordion--list .items a {
+	padding: 17px;
+}
+
+.menu--accordion .menu--accordion--list .items a:hover {
+	background-color: #58ef4a;
+	color: #fff;
+	transition: 300ms all;
+}
+
+.menu--accordion .menu--accordion--list:last-child {
+	border-bottom: none;
+}
+
+.menu--accordion .active:after {
+	content: "\f106";
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	right: 17px;
+	top: 17px;
+	padding: 0px 5px;
+	color: #fff;
+}
+
+.menu--accordion .active:before {
+	content: '\f07c';
+	font-family: "Font Awesome 5 Free";
+	position: absolute;
+	left: 17px;
+	top: 17px;
+	padding: 0px 5px;
+	color: #fff;
+}
+
+.menu--accordion .active > .items {
+	display: block;
+	background: #888;
+	padding: 0px;
+	height: auto;
+	color: #fff;
+	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 200ms;
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+.menu--accordion .active > .items li {
+	padding: 0px;
+	border-bottom: 1px solid #58ef4a;
+	list-style: none;
+}
+
+.menu--accordion .active > .items li:last-child {
+	border-color: transparent;
+	padding-bottom: 0px;
+}
+
+.menu--accordion .active > .items .active > .items {
+	background-color: #58ef4a;
+}
+
+.menu--accordion .active > a {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.menu--accordion .active .menu--accordion--list {
+	background: #58ef4a;
+}
+
+.menu--accordion .active .menu--accordion--list a {
+	padding: 17px 0px 17px 45px;
+}
